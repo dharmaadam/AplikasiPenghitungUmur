@@ -4,6 +4,21 @@
   <NonVisualComponents>
     <Component class="com.toedter.calendar.JMonthChooser" name="jMonthChooser1">
     </Component>
+    <Container class="javax.swing.JFrame" name="jFrame1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -27,17 +42,21 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Component id="jInternalFrame1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="49" max="32767" attributes="0"/>
+          <Component id="jInternalFrame1" max="32767" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <Component id="jInternalFrame1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="296" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -65,9 +84,9 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="dateChooserTanggalLahir" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="txtUmur" pref="182" max="32767" attributes="0"/>
-                              <Component id="txtHariUlangTahunBerikutnya" max="32767" attributes="0"/>
+                              <Component id="txtUlangTahunBerikutnya" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="203" max="32767" attributes="0"/>
+                          <EmptySpace pref="278" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -109,9 +128,9 @@
                           <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtHariUlangTahunBerikutnya" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtUlangTahunBerikutnya" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="170" max="32767" attributes="0"/>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -144,7 +163,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUmurActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtHariUlangTahunBerikutnya">
+        <Component class="javax.swing.JTextField" name="txtUlangTahunBerikutnya">
         </Component>
         <Component class="javax.swing.JButton" name="btnHitung">
           <Properties>
@@ -161,6 +180,21 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKeluarActionPerformed"/>
           </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtAreaPeristiwa">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
